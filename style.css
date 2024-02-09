@@ -1,17 +1,21 @@
 a:link {
     color: #7542b9;
+    cursor: url("/images/c035a.gif"), auto;
 }
 
 a:visited {
     color: #7542b9;
+    cursor: url("/images/c035a.gif"), auto;
 }
 
 a:hover {
     color: #7542b9;
+    cursor: url("/images/c035a.gif"), auto;
 }
 
 a:active {
     color: #7542b9;
+    cursor: url("/images/c035a.gif"), auto;
 }
 
 body {
@@ -19,6 +23,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    cursor: url("/images/c035a.gif"), auto;
 }
 
 header {
