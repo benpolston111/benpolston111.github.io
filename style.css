@@ -36,6 +36,11 @@ header {
     padding-inline: 2em;
 }
 
+#icon a:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
 #section {
     padding-top: 2em;
     text-align: center;
@@ -48,6 +53,30 @@ header {
     box-shadow: 0px 0px 15px 2px #7542b9;
     border-radius: 20px;
     padding: 2em;
+    transition: all 0.3s ease;
+    animation: glow 2s ease-in-out infinite alternate;
+    transform: scale(1);
+}
+
+#glow-bg.no-glow-animation {
+    animation: none;
+}
+
+.code-page,
+.code-page h3,
+.code-page h5,
+.code-page p,
+.code-page a {
+    font-weight: 400;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0px 0px 15px 2px #7542b9;
+    }
+    to {
+        box-shadow: 0px 0px 25px 5px #7542b9;
+    }
 }
 
 #icon-size {
@@ -57,4 +86,13 @@ header {
 
 #spacer {
     padding-top: 2em;
+}
+
+@media (max-width: 768px) {
+    #glow-bg {
+        padding: 1em;
+    }
+    #icon {
+        padding-inline: 1em;
+    }
 }
