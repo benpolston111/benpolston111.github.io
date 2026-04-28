@@ -32,23 +32,23 @@ header {
 
 }
 
-#icon {
+.nav-icon {
     padding-inline: 2em;
 }
 
-#icon a:hover {
+.nav-icon a:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
 
-#section {
+.section {
     padding-top: 2em;
     text-align: center;
     color: #7542b9;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#glow-bg {
+.glow-card {
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0px 0px 15px 2px #7542b9;
     border-radius: 20px;
@@ -58,7 +58,7 @@ header {
     transform: scale(1);
 }
 
-#glow-bg.no-glow-animation {
+.glow-card.no-glow-animation {
     animation: none;
 }
 
@@ -79,9 +79,16 @@ header {
     }
 }
 
-#icon-size {
+.icon-size {
     font-size: 1.5em;
     padding: 0.5em;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-link:hover .icon-size {
+    transform: translateY(-5px) scale(1.15);
+    text-shadow: 0 0 15px rgba(117, 66, 185, 0.7);
 }
 
 #spacer {
@@ -89,10 +96,10 @@ header {
 }
 
 @media (max-width: 768px) {
-    #glow-bg {
+    .glow-card {
         padding: 1em;
     }
-    #icon {
+    .nav-icon {
         padding-inline: 1em;
     }
 }
